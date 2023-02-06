@@ -1,0 +1,174 @@
+[
+  {
+    "id": "1",
+    "name": "Plant Based Reusable Cups",
+    "previous_price": "2.99",
+    "current_price": "2.39",
+    "image_1": "https://i.ibb.co/gwnTNtN/picture-1.webp",
+    "image_2": "https://i.ibb.co/Ksg82GN/picture-2.webp",
+    "image_3": "https://i.ibb.co/tJ7SQ7V/picture-3.webp",
+    "image_4": "https://i.ibb.co/tQwX0xc/picture-4.webp",
+    "image_5": "https://i.ibb.co/FzxkWZy/picture-5.webp",
+    "description": "Barista's love it!Easy to clean, hassle free and Plant Based.Sourced from local farmers, plant residue from Bamboo, Wheat, Rice, and Barley is processed and molded into reusable cups which can be used hundreds of times.",
+    "comment": "So, every batch is unique, Just. Like. You.",
+    "features": {
+      "feature_one": "Every batch of cups is unique due to being natural.",
+      "feature_two": "Lids available in different Colours.",
+      "feature_three": "Designed in USA. ",
+      "feature_four": "Govt Approved, Tested, and approved in TUV, Germany",
+      "feature_five": "100% recyclable and non-toxic",
+      "feature_six": "Leak-Proof",
+      "feature_seven": "Odorless tasteless and doesn’t react with hot beverages",
+      "feature_eight": "Lightweight",
+      "feature_nine": "Microwavable"
+    },
+    "care_guide": {
+      "guide_one": "Rinse Under Tap.",
+      "guide_two": "Place the cup and the lid separately on top shelf of the dishwasher."
+    },
+    "How_to_Dispose": {
+      "do_list": {
+        "one": "Rinse the cup and the lids thoroughly.",
+        "two": "Dispose them into a Recycle bin."
+      },
+      "dont_list": {
+        "one": "Dispose with food waste.",
+        "two": "Throw with General Wate."
+      }
+    },
+    "sizes": {
+      "size_1": "360 ML",
+      "size_2": "475 ML"
+    },
+    "sets": {
+      "set_1": "1",
+      "set_2": "2",
+      "set_3": "4"
+    }
+  },
+
+  {
+    "id": "2",
+    "name": "Sustainability Starter Kit",
+    "previous_price": "12.90",
+    "current_price": "10.99",
+    "image_1": "https://i.ibb.co/8MPHHGh/picture-1.webp",
+    "image_2": "https://i.ibb.co/6JLQj5B/picture-2.webp",
+    "image_3": "https://i.ibb.co/tJ7SQ7V/picture-3.webp",
+    "image_4": "https://i.ibb.co/tQwX0xc/picture-4.webp",
+    "image_5": "https://i.ibb.co/FzxkWZy/picture-5.webp",
+    "description": "This starter kit is all you need to start the revolution.",
+    "consist_elemnets": {
+      "element_one": "2 Bamboo Straws",
+      "element_two": "1 Plant Based Reusable Cup with 2 lids",
+      "element_three": "1 Natural Loofah",
+      "element_four": "1 box of 50 Bamboo Cotton Eartips",
+      "element_five": "1 Bamboo Toothbrush"
+    },
+    "features": {
+      "feature_one": "Govt Approved, Tested, and approved in TUV Rhineland, Germany",
+      "feature_two": "100% recyclable and non-toxic        ",
+      "feature_three": "Leak-Proof  ",
+      "feature_four": "Govt Approved, Tested, and approved in TUV, Germany",
+      "feature_five": "100% recyclable and non-toxic",
+      "feature_six": "Leak-Proof",
+      "feature_seven": "Odorless tasteless and doesn’t react with hot beverages",
+      "feature_eight": "Microwavable"
+    },
+    "status": "best_seller"
+  },
+  {
+    "id": "3",
+    "name": "Reusable Bamboo Straws",
+    "previous_price": "2.80",
+    "current_price": "1.99",
+    "image_1": "https://i.ibb.co/xzCmfzT/picture-1.webp",
+    "image_2": "https://i.ibb.co/z50C9SY/picture-3.webp",
+    "image_3": "https://i.ibb.co/jyLrbFB/picture-2.webp",
+    "image_4": "https://i.ibb.co/tQwX0xc/picture-4.webp",
+    "image_5": "https://i.ibb.co/FzxkWZy/picture-5.webp",
+    "description": "We collaborated with artisans in Veitnam, Earthly Organic Bamboo Straws are 100% Compostable, Vegan and BPA free. They can be reused, thrown in a compost bin, or even in your backyard. Serve with cold beverages like ice tea, cold coffee and many more. ",
+    "features": {
+      "feature_one": "Govt Approved, Tested, and approved in TUV Rhineland, Germany",
+      "feature_two": "100% recyclable and non-toxic        ",
+      "feature_three": "Leak-Proof  ",
+      "feature_four": "Govt Approved, Tested, and approved in TUV, Germany",
+      "feature_five": "100% recyclable and non-toxic",
+      "feature_six": "Leak-Proof",
+      "feature_seven": "Odorless tasteless and doesn’t react with hot beverages",
+      "feature_eight": "Microwavable"
+    },
+    "care_guide": {
+      "guide_one": "Wash it with clean water under the tap.",
+      "guide_two": "Put it in the dishwasher.",
+      "guide_three": "Boil in water for a few minutes."
+    }
+  },
+  {
+    "id": "4",
+    "name": "Natural Bamboo Loofah",
+    "previous_price": "3.99",
+    "current_price": "2.99",
+    "image_1": "https://i.ibb.co/Lr56Pm1/picture-3.webp",
+    "image_2": "https://i.ibb.co/Hqkt9N6/picture-2.webp",
+    "image_3": "https://i.ibb.co/98zxmVv/picture-3.webp",
+    "image_4": "https://i.ibb.co/tQwX0xc/picture-4.webp",
+    "image_5": "https://i.ibb.co/FzxkWZy/picture-5.webp",
+    "description": "Natural loofah sponges actually come from the fruits of vine-growing Luffa plants. These plants are part of the gourd family (Cucurbitaceae) making them relatives of watermelons, cucumbers and pumpkins.When a luffa fruit dries out and is peeled, you are left with its fibrous interior, which can be used as a sponge.It is biodegradable and is an organic, eco-friendly exfoliating body scrubber. Both men and women can use it, suitable for shower and bathtub.",
+    "features": {
+      "feature_one": "Plant-based material; Better for the skin - No Chemicals",
+      "feature_two": "Exfoliation - Removing dead skin cells not only improves the look of your skin, it also sweeps away places where bacteria and soil could collect.",
+      "feature_three": "Improving Circulation - Unlike harshly abrasive scrubbers and sponges, a loofah's firm but elastic fibers are round in cross section and are less likely to scratch skin"
+    },
+    "care_guide": {
+      "guide_one": "Wet the loofah or soak it in water",
+      "guide_two": "Apply soap or body wash",
+      "guide_three": "Boil in water for a few minutes."
+    }
+  },
+  {
+    "id": "5",
+    "name": "Bamboo Toothbrush (set of 2)",
+    "previous_price": "3.99",
+    "current_price": "2.99",
+    "image_1": "https://i.ibb.co/tZXF8Cd/picture-6.webp",
+    "image_2": "https://i.ibb.co/31SnnVJ/picture-1.webp",
+    "image_3": "https://i.ibb.co/98zxmVv/picture-3.webp",
+    "image_4": "https://i.ibb.co/tQwX0xc/picture-4.webp",
+    "image_5": "https://i.ibb.co/FzxkWZy/picture-5.webp",
+    "description": "Earthly Bamboo Toothbrush are BPA free, Biodegradable and have charcoal infused bristles that help remove stains effectively. We guarantee your satisfaction. See for yourself!",
+    "features": {
+      "feature_one": "Plant-based material; Better for the skin - No Chemicals",
+      "feature_two": "Exfoliation - Removing dead skin cells not only improves the look of your skin, it also sweeps away places where bacteria and soil could collect.",
+      "feature_three": "Improving Circulation - Unlike harshly abrasive scrubbers and sponges, a loofah's firm but elastic fibers are round in cross section and are less likely to scratch skin"
+    },
+    "care_guide": {
+      "guide_one": "Wet the loofah or soak it in water",
+      "guide_two": "Apply soap or body wash",
+      "guide_three": "Boil in water for a few minutes."
+    }
+  },
+  {
+    "id": "6",
+    "name": "Plant Based Reusable Containers",
+    "previous_price": "3.99",
+    "current_price": "2.99",
+    "image_1": "https://i.ibb.co/4SjY9kQ/picture-1.webp",
+    "image_2": "https://i.ibb.co/nRN6TGm/picture-4.webp",
+    "image_3": "https://i.ibb.co/4SjY9kQ/picture-1.webp",
+    "image_4": "https://i.ibb.co/tQwX0xc/picture-4.webp",
+    "image_5": "https://i.ibb.co/FzxkWZy/picture-5.webp",
+    "description": "Sourced from local farmers, plant residue from Bamboo, Wheat, Rice, and Barley is processed and molded into reusable containers which can be used hundreds of times. Microwave safe, seal proof, and sturdy, they are perfect to store snacks or lunch.Designed in USA. Tested in Germany.",
+    "features": {
+      "feature_one": "100% recyclable.",
+      "feature_two": "Govt Approved, Tested and approved in TUV Rhineland Germany",
+      "feature_three": "Lightweight",
+      "feature_four": "Microwavable",
+      "feature_five": "Recyclable and reusable"
+    },
+    "care_guide": {
+      "guide_one": "Can be reused hundreds of times. Just wash under a tap or in a dishwasher."
+    },
+    "isStock": "false"
+  }
+]
