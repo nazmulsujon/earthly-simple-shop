@@ -25,6 +25,17 @@ const Header = () => {
           Shop
         </NavLink>
       </li>
+      <li className="mr-1 my-1 font-semibold">
+        <NavLink
+          to={`/signup`}
+          className={({ isActive }) => (isActive ? " text-info rounded font-bold" : " rounded text-white")}
+        >
+          Sign up
+        </NavLink>
+      </li>
+      <li className="mr-1 my-1 font-semibold">
+        <button className="btn btn-ghost btn-outline text-white font-bold normal-case">Log out</button>
+      </li>
     </React.Fragment>
   );
 
