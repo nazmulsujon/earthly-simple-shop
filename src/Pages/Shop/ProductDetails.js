@@ -1,4 +1,7 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
+import Swal from "sweetalert2";
+import "animate.css";
+import { Fade, Slide } from "react-reveal";
 import { Link, useParams } from "react-router-dom";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { VscDebugBreakpointLogUnverified } from "react-icons/vsc";
@@ -33,6 +36,19 @@ const ProductDetails = () => {
     sets,
   } = productDetails;
   console.log(productDetails);
+
+  const handleBuyNowModal = () => {
+    Swal.fire({
+      title: "We can't accept online orders right now!",
+      text: "Please contact us to complete your purchase",
+      showClass: {
+        popup: "animate__animated animate__fadeInDown",
+      },
+      hideClass: {
+        popup: "animate__animated animate__fadeOutUp",
+      },
+    });
+  };
 
   useEffect(() => {
     fetch(`http://localhost:5000/product/${id}`)
@@ -97,7 +113,9 @@ const ProductDetails = () => {
           )}
         </Swiper>
       </div>
-      <p className="text-xl lg:px-10 text-accent">{name}</p>
+      <Fade left>
+        <p className="text-xl lg:px-10 text-accent">{name}</p>
+      </Fade>
       <div className="description-div w-11/12 mx-auto lg:flex flex-row-reverse justify-between">
         <div className="md:w-1/3">
           <p className="font-bold text-accent">
@@ -139,82 +157,106 @@ const ProductDetails = () => {
             </button>
           </div>
           <div>
-            <button className="btn btn-accent btn-wide rounded-none normal-case font-thin text-white">But Now</button>
+            <button
+              onClick={handleBuyNowModal}
+              className="btn btn-accent btn-wide rounded-none normal-case font-thin text-white"
+            >
+              But Now
+            </button>
           </div>
         </div>
         <div className="md:w-2/3 mr-10">
-          <p className="font-mono mt-5">{description}</p>
-          <p className="mb-28 font-serif mt-3 font-semibold">{comment}</p>
+          <Fade bottom>
+            <p className="font-mono mt-5">{description}</p>
+          </Fade>
+          <Fade left>
+            <p className="mb-28 font-serif mt-3 font-semibold">{comment}</p>
+          </Fade>
 
           {/* features  */}
           {features && (
             <>
-              <strong className="text-accent">Features</strong>
-              <ul className="my-12">
-                {features.feature_one && (
-                  <li className="mt-8 flex items-center font-mono ">
-                    <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_one}
-                  </li>
-                )}
-                {features.feature_two && (
-                  <li className="flex items-center font-mono ">
-                    <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_two}
-                  </li>
-                )}
-                {features.feature_three && (
-                  <li className="flex items-center font-mono  ">
-                    <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_three}
-                  </li>
-                )}
-                {features.feature_four && (
-                  <li className="flex items-center font-mono ">
-                    <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_four}
-                  </li>
-                )}
-                {features.feature_five && (
-                  <li className="flex items-center font-mono ">
-                    <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_five}
-                  </li>
-                )}
-                {features.feature_six && (
-                  <li className="flex items-center font-mono ">
-                    <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_six}
-                  </li>
-                )}
-                {features.feature_seven && (
-                  <li className="flex items-center font-mono">
-                    <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_seven}
-                  </li>
-                )}
-              </ul>
+              <Slide left>
+                <strong className="text-accent">Features</strong>
+              </Slide>
+              <Slide bottom>
+                <ul className="my-12">
+                  {features.feature_one && (
+                    <li className="mt-8 flex items-center font-mono ">
+                      <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_one}
+                    </li>
+                  )}
+                  {features.feature_two && (
+                    <li className="flex items-center font-mono ">
+                      <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_two}
+                    </li>
+                  )}
+                  {features.feature_three && (
+                    <li className="flex items-center font-mono  ">
+                      <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_three}
+                    </li>
+                  )}
+                  {features.feature_four && (
+                    <li className="flex items-center font-mono ">
+                      <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_four}
+                    </li>
+                  )}
+                  {features.feature_five && (
+                    <li className="flex items-center font-mono ">
+                      <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_five}
+                    </li>
+                  )}
+                  {features.feature_six && (
+                    <li className="flex items-center font-mono ">
+                      <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_six}
+                    </li>
+                  )}
+                  {features.feature_seven && (
+                    <li className="flex items-center font-mono">
+                      <VscDebugBreakpointLogUnverified className="mr-2" /> {features?.feature_seven}
+                    </li>
+                  )}
+                </ul>
+              </Slide>
             </>
           )}
 
           {/* care guide  */}
           {care_guide && (
             <>
-              <strong className="text-accent">Care Guide</strong>
-              <ul className="md:ml-5 font-mono mb-12">
-                {care_guide && <li className="mt-4 list-disc">{care_guide?.guide_one}</li>}
-                {care_guide && <li className="list-disc">{care_guide?.guide_two}</li>}
-              </ul>
+              <Slide left>
+                <strong className="text-accent">Care Guide</strong>
+              </Slide>
+              <Slide bottom>
+                <ul className="md:ml-5 font-mono mb-12">
+                  {care_guide && <li className="mt-4 list-disc">{care_guide?.guide_one}</li>}
+                  {care_guide && <li className="list-disc">{care_guide?.guide_two}</li>}
+                </ul>
+              </Slide>
             </>
           )}
 
           {/* how to dispose  */}
           {How_to_Dispose && (
             <>
-              <strong className="text-accent ">How to Dispose</strong>
-              <h2 className="font-bold underline text-left mt-6">Do :</h2>
-              <ol className="md:ml-7 font-mono">
-                {How_to_Dispose?.do_list && <li className="list-decimal">{How_to_Dispose?.do_list?.one}</li>}
-                {How_to_Dispose?.do_list && <li className="list-decimal">{How_to_Dispose?.do_list?.two}</li>}
-              </ol>
-              <h2 className="font-bold underline text-left mt-6">Dont :</h2>
-              <ul className="md:ml-6 font-mono">
-                {How_to_Dispose?.dont_list && <li className="list-disc">{How_to_Dispose?.dont_list?.one}</li>}
-                {How_to_Dispose?.dont_list && <li className="list-disc">{How_to_Dispose?.dont_list?.two}</li>}
-              </ul>
+              <Slide left>
+                {" "}
+                <strong className="text-accent ">How to Dispose</strong>
+              </Slide>
+              <Slide bottom>
+                <h2 className="font-bold underline text-left mt-6">Do :</h2>
+                <ol className="md:ml-7 font-mono">
+                  {How_to_Dispose?.do_list && <li className="list-decimal">{How_to_Dispose?.do_list?.one}</li>}
+                  {How_to_Dispose?.do_list && <li className="list-decimal">{How_to_Dispose?.do_list?.two}</li>}
+                </ol>
+              </Slide>
+              <Slide bottom>
+                <h2 className="font-bold underline text-left mt-6">Dont :</h2>
+                <ul className="md:ml-6 font-mono">
+                  {How_to_Dispose?.dont_list && <li className="list-disc">{How_to_Dispose?.dont_list?.one}</li>}
+                  {How_to_Dispose?.dont_list && <li className="list-disc">{How_to_Dispose?.dont_list?.two}</li>}
+                </ul>
+              </Slide>
             </>
           )}
         </div>
