@@ -87,6 +87,11 @@
     "image_3": "https://i.ibb.co/jyLrbFB/picture-2.webp",
     "image_4": "https://i.ibb.co/tQwX0xc/picture-4.webp",
     "image_5": "https://i.ibb.co/FzxkWZy/picture-5.webp",
+    "sets": {
+      "set_1": "4",
+      "set_2": "10",
+      "set_3": "20"
+    },
     "description": "We collaborated with artisans in Veitnam, Earthly Organic Bamboo Straws are 100% Compostable, Vegan and BPA free. They can be reused, thrown in a compost bin, or even in your backyard. Serve with cold beverages like ice tea, cold coffee and many more. ",
     "features": {
       "feature_one": "Govt Approved, Tested, and approved in TUV Rhineland, Germany",
@@ -140,7 +145,7 @@
     "features": {
       "feature_one": "Plant-based material; Better for the skin - No Chemicals",
       "feature_two": "Exfoliation - Removing dead skin cells not only improves the look of your skin, it also sweeps away places where bacteria and soil could collect.",
-      "feature_three": "Improving Circulation - Unlike harshly abrasive scrubbers and sponges, a loofah's firm but elastic fibers are round in cross section and are less likely to scratch skin"
+      "feature_three": "Improving Circulation Unlike harshly abrasive scrubbers and sponges, a loofah's firm but elastic fibers are round in cross section and are less likely to scratch skin"
     },
     "care_guide": {
       "guide_one": "Wet the loofah or soak it in water",

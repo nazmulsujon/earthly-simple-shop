@@ -2,7 +2,9 @@ import React, { useContext, useState } from "react";
 import "./SignUp.css";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
-import { FaGoogle } from "react-icons/fa";
+import { FaGoogle, FaLock } from "react-icons/fa";
+import { SiNamecheap } from "react-icons/si";
+import { MdMail } from "react-icons/md";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 
@@ -66,9 +68,11 @@ const SignUp = () => {
           <h2 className="text-2xl text-center font-bold text-gray-600 mb-3">Sign Up</h2>
 
           <form onSubmit={handleSubmit(handleSignUp)}>
-            <div className="form-control w-full max-w-xs mx-auto">
+            <div className="form-control w-full max-w-xs mx-auto ">
               <label className="label">
-                <span className="label-text font-mono">Name</span>
+                <span className="label-text font-mono flex items-center">
+                  <SiNamecheap className="mr-2" /> Name
+                </span>
               </label>
               <input
                 type="text"
@@ -85,7 +89,10 @@ const SignUp = () => {
 
             <div className="form-control max-w-xs mx-auto">
               <label className="label">
-                <span className="label-text font-mono">Email</span>
+                <span className="label-text font-mono flex items-center">
+                  {" "}
+                  <MdMail className="mr-2" /> Email
+                </span>
               </label>
               <input
                 type="email"
@@ -102,7 +109,10 @@ const SignUp = () => {
 
             <div className="form-control w-full max-w-xs mx-auto">
               <label className="label">
-                <span className="label-text font-mono">Password</span>
+                <span className="label-text font-mono flex items-center">
+                  <FaLock className="mr-2" />
+                  Password
+                </span>
               </label>
               <input
                 type="password"
@@ -132,7 +142,7 @@ const SignUp = () => {
             </div>
 
             <div className="form-control w-full max-w-xs mx-auto">
-              <input className="btn btn-success rounded font-bold" type="submit" value="Sign Up" />
+              <input className="btn btn-accent rounded font-bold" type="submit" value="Sign Up" />
             </div>
             <div className="max-w-xs mx-auto">
               {signUpError && <p className="text-red-600 font-mono">{signUpError}</p>}

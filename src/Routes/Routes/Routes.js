@@ -4,6 +4,7 @@ import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import Home from "../../Pages/Home/Home";
 import Login from "../../Pages/Register/Login/Login";
 import SignUp from "../../Pages/Register/SignUp/SignUp";
+import ProductDetails from "../../Pages/Shop/ProductDetails";
 import Shop from "../../Pages/Shop/Shop";
 
 export const router = createBrowserRouter([
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop></Shop>,
+      },
+      {
+        path: "/product/:id",
+        element: <ProductDetails></ProductDetails>,
       },
       {
         path: "/signup",

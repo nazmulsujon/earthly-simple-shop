@@ -1,7 +1,8 @@
 import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { FaGoogle } from "react-icons/fa";
+import { FaGoogle, FaLock } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import toast from "react-hot-toast";
 import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 
@@ -58,7 +59,9 @@ const Login = () => {
           <form onSubmit={handleSubmit(handleLogin)}>
             <div className="form-control w-full max-w-xs mx-auto">
               <label className="label">
-                <span className="label-text font-mono">Email</span>
+                <span className="label-text font-mono flex items-center">
+                  <MdEmail className="mr-2" /> Email
+                </span>
               </label>
               <input
                 type="text"
@@ -75,7 +78,10 @@ const Login = () => {
 
             <div className="form-control w-full max-w-xs mx-auto">
               <label className="label">
-                <span className="label-text font-mono">Password</span>
+                <span className="label-text font-mono flex items-center">
+                  {" "}
+                  <FaLock className="mr-2" /> Password
+                </span>
               </label>
               <input
                 type="password"
@@ -94,12 +100,14 @@ const Login = () => {
                 </label>
               )}
               <label className="label">
-                <span className="label-text font-mono">Forgot Password?</span>
+                <a href="##" className="label-text font-mono">
+                  Forgot Password?
+                </a>
               </label>
             </div>
 
             <div className="form-control max-w-xs mx-auto">
-              <input className="btn  btn-success rounded font-bold" type="submit" value="login" />
+              <input className="btn  btn-accent rounded font-bold" type="submit" value="login" />
             </div>
             <div className="max-w-xs mx-auto">
               {loginError && <p className="text-red-600 font-mono">{loginError}</p>}
