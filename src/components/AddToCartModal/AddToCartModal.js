@@ -8,9 +8,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
+import { toast } from "react-hot-toast";
 
 const AddToCartModal = ({ product }) => {
-  console.log("from modal kaka", product);
+  const handleAddToCart = () => {
+    toast.success("Add to Cart successfully!");
+  };
 
   return (
     <>
@@ -91,7 +94,10 @@ const AddToCartModal = ({ product }) => {
                 />
               </div>
               <div>
-                <button className="btn btn-success btn-wide normal-case font-thin my-3 text-white rounded">
+                <button
+                  onClick={handleAddToCart}
+                  className="btn btn-success btn-wide normal-case font-thin my-3 text-white rounded"
+                >
                   Add to Cart
                 </button>
               </div>

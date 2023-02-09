@@ -8,7 +8,7 @@ const Shop = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/products`)
+    fetch(`https://earthly-simple-shop-server.vercel.app/products`)
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));

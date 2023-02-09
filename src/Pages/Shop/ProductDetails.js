@@ -3,8 +3,10 @@ import Swal from "sweetalert2";
 import "animate.css";
 import { Fade, Slide } from "react-reveal";
 import { Link, useParams } from "react-router-dom";
-import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+import { BsArrowLeftShort, BsArrowRightShort, BsFacebook, BsPinterest } from "react-icons/bs";
 import { VscDebugBreakpointLogUnverified } from "react-icons/vsc";
+import { RiWhatsappFill } from "react-icons/ri";
+import { AiFillTwitterCircle } from "react-icons/ai";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,6 +16,7 @@ import "swiper/css/pagination";
 import "./ProductDetails.css";
 // import required modules
 import { Pagination } from "swiper";
+import { toast } from "react-hot-toast";
 
 const ProductDetails = () => {
   let { id } = useParams();
@@ -35,7 +38,7 @@ const ProductDetails = () => {
     sizes,
     sets,
   } = productDetails;
-  console.log(productDetails);
+  // console.log(productDetails);
 
   const handleBuyNowModal = () => {
     Swal.fire({
@@ -50,8 +53,12 @@ const ProductDetails = () => {
     });
   };
 
+  const handleAddToCart = () => {
+    toast.success("Add to Cart successfully!");
+  };
+
   useEffect(() => {
-    fetch(`http://localhost:5000/product/${id}`)
+    fetch(`https://earthly-simple-shop-server.vercel.app/product/${id}`)
       .then((res) => res.json())
       .then((data) => setProductDetails(data))
       .catch((err) => console.log(err));
@@ -152,7 +159,10 @@ const ProductDetails = () => {
             />
           </div>
           <div>
-            <button className="btn btn-success btn-wide rounded-none normal-case font-thin mb-5 text-white">
+            <button
+              onClick={handleAddToCart}
+              className="btn btn-success btn-wide rounded-none normal-case font-thin mb-5 text-white"
+            >
               Add to Cart
             </button>
           </div>
@@ -163,6 +173,20 @@ const ProductDetails = () => {
             >
               Buy Now
             </button>
+          </div>
+          <div className="social-icon-div flex items-center my-3">
+            <a href="" className="mr-2" style={{ color: "rgb(96, 214, 106)" }}>
+              <RiWhatsappFill />
+            </a>
+            <a href="" className="mr-2" style={{ color: "#3a5897" }}>
+              <BsFacebook />
+            </a>
+            <a href="" className="mr-2" style={{ color: "#2fc7f2" }}>
+              <AiFillTwitterCircle />
+            </a>
+            <a href="" className="mr-2" style={{ color: "#f01951" }}>
+              <BsPinterest />
+            </a>
           </div>
         </div>
         <div className="md:w-2/3 mr-10">
