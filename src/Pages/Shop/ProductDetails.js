@@ -17,6 +17,7 @@ import "./ProductDetails.css";
 // import required modules
 import { Pagination } from "swiper";
 import { toast } from "react-hot-toast";
+import Spinner from "../../components/Spinner/Spinner";
 
 const ProductDetails = () => {
   let { id } = useParams();
@@ -123,6 +124,7 @@ const ProductDetails = () => {
       <Fade left>
         <p className="text-xl lg:px-10 text-accent">{name}</p>
       </Fade>
+
       <div className="description-div w-11/12 mx-auto lg:flex flex-row-reverse justify-between">
         <div className="md:w-1/3">
           <p className="font-bold text-accent">
