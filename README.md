@@ -4,7 +4,7 @@ Earthly-Shop
 
 ### Visit This Site
 
-live site: (https://earthly-simple-shop.web.app/)
+live site: (https://earthly-simple-shop.firebaseapp.com/)
 
 ### technologies used
 
