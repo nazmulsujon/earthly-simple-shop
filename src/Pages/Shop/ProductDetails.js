@@ -161,7 +161,7 @@ const ProductDetails = () => {
               onClick={handleBuyNowModal}
               className="btn btn-accent btn-wide rounded-none normal-case font-thin text-white"
             >
-              But Now
+              Buy Now
             </button>
           </div>
         </div>

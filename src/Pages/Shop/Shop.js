@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import AddToCartModal from "../../components/AddToCartModal/AddToCartModal";
 import Spinner from "../../components/Spinner/Spinner";
 import ProductCard from "./ProductCard";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
+  const [product, setProduct] = useState(null);
 
   useEffect(() => {
     fetch(`http://localhost:5000/products`)
@@ -13,16 +15,17 @@ const Shop = () => {
   }, []);
   if (products.length === 0) {
     return (
-      <div className="text-center my-5">
+      <div className="text-center my-20">
         <Spinner></Spinner>
       </div>
     );
   }
   return (
-    <section className="grid lg:grid-cols-3 md:mx-32 gap-y-5 my-5">
+    <section className="grid lg:grid-cols-3 md:mx-32 gap-y-10 my-20">
       {products.map((product) => (
-        <ProductCard product={product}></ProductCard>
+        <ProductCard product={product} setProduct={setProduct}></ProductCard>
       ))}
+      {products && <AddToCartModal product={product}></AddToCartModal>}
     </section>
   );
 };

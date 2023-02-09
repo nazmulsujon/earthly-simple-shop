@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Home = () => {
-  return <h1>this is home page</h1>;
+  return <></>;
 };
 
 export default Home;
